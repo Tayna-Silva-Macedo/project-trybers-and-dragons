@@ -11,22 +11,23 @@ export default class PVE extends Battle {
     this._monsters = monsters;
   }
 
-  public fight(): number {
-    let playerIsAlive = this._player.lifePoints !== -1;
-    let monstersAreAlive = this._monsters.some(
+  private isSomeoneDead(): boolean {
+    const isPlayerAlive = this._player.lifePoints !== -1;
+    const areMonstersAlive = this._monsters.some(
       (monster) => monster.lifePoints !== -1,
     );
 
-    while (playerIsAlive && monstersAreAlive) {
+    if (isPlayerAlive && areMonstersAlive) return false;
+
+    return true;
+  }
+
+  public fight(): number {
+    while (!this.isSomeoneDead()) {
       this._monsters.forEach((monster) => {
         this._player.attack(monster);
         monster.attack(this._player);
       });
-
-      playerIsAlive = this._player.lifePoints !== -1;
-      monstersAreAlive = this._monsters.some(
-        (monster) => monster.lifePoints !== -1,
-      );
     }
 
     return super.fight();
