@@ -15,6 +15,6 @@ export default class Orc extends Race {
   }
 
   public static createdRacesInstances(): number {
-    return this._countInstances;
+    return Orc._countInstances;
   }
 }
