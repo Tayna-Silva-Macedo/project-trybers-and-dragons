@@ -1,18 +1,18 @@
 # Bem-vindo ao Projeto Trybers and Dragons!
 
 Este é um projeto da [Trybe](https://www.betrybe.com/) que foi desenvolvido no módulo de Back-end. 
-O Trybers and Dragons trata-se de uma simulação de estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG.
+O Trybers and Dragons trata-se de uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG.
 O objetivo principal foi aplicar e exercitar os princípios SOLID e POO.
 
 ## Tecnologias utilizadas
 
-Para o desenvolvimento deste projeto foi utilizado ***Docker*** para rodar o projeto em um container, linguagem **TypeScript** para a escrita do código, paradigma **POO** e pincípios **SOLID** que proporcionam um código mais limpo, organizado e de manutenção mais facilitada.
+Para o desenvolvimento deste projeto foi utilizado ***Docker*** para rodar o projeto em um container, linguagem **TypeScript** para a escrita do código, paradigma **POO** e princípios **SOLID** que proporcionam um código mais limpo, organizado e de manutenção mais facilitada.
 
 ## O que foi desenvolvido
 
   - Aplicação que simula um mini jogo de RPG em TypeScript;
-  - Criação de classes;
-  - Aplicação de conceitos de herança, encapsulamento e polimorfismo;
+  - Criação de classes e interfaces;
+  - Aplicação de conceitos de herança, encapsulamento, polimorfismo e abstração;
   - Aplicação dos princípios SOLID.
 
 ## Como rodar o projeto na sua máquina utilizando o Docker:
